@@ -1,0 +1,194 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set global font styles and set body background color*/
+body {
+  font-family: Bodoni;
+  font-size: 16px;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  Flex-direction: column;
+  background-color: #fff;
+}
+
+
+Body h2 {
+ color: #1a1a1a;
+}
+
+.shop-grid {
+ display: grid;
+ gap: 2rem;
+ grid-template-columns: repeat(4, minmax(0, 1fr));
+ justify-content: center;
+}
+
+.merchitem {
+      padding: 10px;
+      padding-bottom: 5px;
+      margin: 1px;
+      font-family: Arial;
+      text-align: center;
+      list-style-type: none;
+}
+
+.merchitem img {
+  width: 90%;
+  height: 60%;
+}
+
+.weinerdog {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+   }
+
+Template {
+}
+
+
+
+/* Container Styles */
+#container {
+	width: 60%;
+	margin: 0 auto;
+}
+
+
+
+/* Main styles */
+
+
+/* Header styles */
+header {
+  color: #1a1a1a;
+
+}
+
+header h1 {
+	padding: 10px;
+
+}
+
+/*for resizing logo */
+
+header img {
+  width: 90%;
+  height: 90%;
+  border-color: white;
+}
+
+
+/* Navigation styles */
+nav {
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0 21px 0 0;
+}
+
+nav li {
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+nav a {
+  font-family: Arial;
+  color: #1a1a1a;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+nav a:hover {
+  color: #aaa;
+}
+
+.tourdates {
+  font-size: 30px;
+  list-style-type: none;
+  margin-left: 20px;
+  font-family: Arial;
+}
+
+/* Content styles */
+@font-face { font-family: Bodoni;
+src: url('Bodoni MT Black Regular.ttf');
+}
+
+@font-face { font-family: Arial;
+src: url('arialroundedmtbold.ttf');
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 10px;
+}
+
+p {
+  line-height: 1.5;
+  margin: 100px;
+  font-size: 30px;
+  font-family: Arial;
+  color: red;
+  text-align: center;
+}
+
+ul, ol {
+	padding-left: 15px;
+}
+
+
+
+/* Footer styles */
+
+
+footer {
+  color: #c7c7c7;
+  Background-color: #1a1a1a;
+  padding: 20px;
+  text-align: center;
+  padding: 100px;
+  margin-top: auto;
+}
+
+
+
+footer a {
+  font-family: Arial;
+  color: #c7c7c7;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  padding: 10px;
+}
+
+
+/*media queuries */
+
+
+@media (max-width: 768px) {
+
+
+}
+
+@media (max-width: 1024) {
+  nav {
+      position: absolute;
+      background-color: blue;
+  }
+}
