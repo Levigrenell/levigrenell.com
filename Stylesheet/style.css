@@ -4,7 +4,7 @@
 
   grid-template-areas:
     "header header nav"
-    "content content aside"
+    "content content content"
     "footer footer footer";
 	
   
@@ -26,7 +26,6 @@ header {
 
 nav {
   grid-area: nav;
-  margin-right: 0.5rem;
   border: 2px solid red;
 
 }
@@ -50,21 +49,22 @@ main {
 }
 
 main .portfolio-grid-area {
-	width: 100%; 
-	height: auto;
 	display: grid; 
 	grid-gap: 14px;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr;
-	
-	
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+
 }
 
 main .portfolio-item {
 
 	border: 2px solid red;
-	width: 100px;
-	
+	width: 200px;
+	height: 200px;
+	margin-bottom: 5em;
 	
 }
 
@@ -87,3 +87,46 @@ footer {
 }
 
 
+
+@media (max-width: 768px){
+
+	main .portfolio-grid-area {
+		display: grid; 
+	grid-gap: 14px;
+	grid-template-columns: 1fr;
+	justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+	
+}
+main .portfolio-item {
+
+	border: 2px solid red;
+	width: 400px;
+	height: 400px;
+	margin-bottom: 5em;
+	
+}
+	
+@media (max-width: 450px){
+	
+main .portfolio-grid-area {
+	display: grid; 
+	grid-gap: 14px;
+	grid-template-columns: 1fr;
+	justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+	}
+	
+main .portfolio-item {
+
+	border: 2px solid red;
+	width: 300px;
+	height: 300px;
+	margin-bottom: 5em;
+	
+}
+}
