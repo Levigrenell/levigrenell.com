@@ -5,13 +5,16 @@
     "header header nav"
     "content content aside"
     "footer footer footer";
-
-  grid-template-columns: 200px 1fr 200px;
-  grid-template-rows: auto 1fr auto;
+	
+  
+	
   grid-gap: 10px;
 
   height: 100vh;
-
+  font-family: "Helvetica", "Arial";
+	
+	grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: auto 1fr auto;
 }
 
 header {
@@ -24,10 +27,21 @@ nav {
   margin-right: 0.5rem;
   border: 2px solid red;
 }
+nav p {
+	text-align: right;
+	font-size: 29.124px;
+	line-height: 47.122632px;
+}
 
 main {
   grid-area: content;
-  border: 2px solid red;
+  border: 2px solid red;d
+  
+}
+
+main p {
+	font-size: 18px;
+	line-height: 47.122632px;
 }
 
 aside {
