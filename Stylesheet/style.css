@@ -73,11 +73,6 @@ main p {
 	line-height: 47.122632px;
 }
 
-aside {
-  grid-area: aside;
-  margin-right: 0.5rem;
-  border: 2px solid red;
-}
 
 footer {
   grid-area: footer;
