@@ -1,194 +1,197 @@
-/* Reset default styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  grid-template-areas:
+    "header header header"
+    "nav content side"
+    "footer footer footer";
+
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 10px;
+
+  height: 100vh;  grid-template-areas:
+    "header header header"
+    "nav content side"
+    "footer footer footer";
+
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 10px;
+
+  height: 100vh;  grid-template-areas:
+    "header header header"
+    "nav content side"
+    "footer footer footer";
+
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 10px;
+
+  height: 100vh;  grid-template-areas:
+    "header header header"
+    "nav content side"
+    "footer footer footer";
+
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 10px;
+
+  height: 100vh;.container {
+  display: grid;
+
+  grid-template-areas:
+    "header header header"
+    "nav content side"
+    "footer footer footer";
+
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 10px;
+
+  height: 100vh;
+}.container {
+  display: grid;
+
+  grid-template-areas:
+    "header header header"
+    "nav content side"
+    "footer footer footer";
+
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 10px;
+
+  height: 100vh;
+}grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 10px;
+
+  height: 100vh;grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 10px;
+
+  height: 100vh;header {
+  grid-area: header;
 }
 
-/* Set global font styles and set body background color*/
-body {
-  font-family: Bodoni;
-  font-size: 16px;
-  line-height: 1.5;
-  min-height: 100vh;
-  display: flex;
-  Flex-direction: column;
-  background-color: #fff;
-}
-
-
-Body h2 {
- color: #1a1a1a;
-}
-
-.shop-grid {
- display: grid;
- gap: 2rem;
- grid-template-columns: repeat(4, minmax(0, 1fr));
- justify-content: center;
-}
-
-.merchitem {
-      padding: 10px;
-      padding-bottom: 5px;
-      margin: 1px;
-      font-family: Arial;
-      text-align: center;
-      list-style-type: none;
-}
-
-.merchitem img {
-  width: 90%;
-  height: 60%;
-}
-
-.weinerdog {
-     display: block;
-     margin-left: auto;
-     margin-right: auto;
-   }
-
-Template {
-}
-
-
-
-/* Container Styles */
-#container {
-	width: 60%;
-	margin: 0 auto;
-}
-
-
-
-/* Main styles */
-
-
-/* Header styles */
-header {
-  color: #1a1a1a;
-
-}
-
-header h1 {
-	padding: 10px;
-
-}
-
-/*for resizing logo */
-
-header img {
-  width: 90%;
-  height: 90%;
-  border-color: white;
-}
-
-
-/* Navigation styles */
 nav {
+  grid-area: nav;
+  margin-left: 0.5rem;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  padding: 0 21px 0 0;
+main {
+  grid-area: content;
 }
 
-nav li {
-  margin-left: auto;
-  margin-right: auto;
-
+aside {
+  grid-area: side;
+  margin-right: 0.5rem;
 }
-
-nav a {
-  font-family: Arial;
-  color: #1a1a1a;
-  text-decoration: none;
-  transition: all 0.2s ease;
-}
-
-nav a:hover {
-  color: #aaa;
-}
-
-.tourdates {
-  font-size: 30px;
-  list-style-type: none;
-  margin-left: 20px;
-  font-family: Arial;
-}
-
-/* Content styles */
-@font-face { font-family: Bodoni;
-src: url('Bodoni MT Black Regular.ttf');
-}
-
-@font-face { font-family: Arial;
-src: url('arialroundedmtbold.ttf');
-}
-
-h1 {
-  font-size: 60px;
-}
-
-h2 {
-  font-size: 30px;
-}
-
-h3 {
-  font-size: 10px;
-}
-
-p {
-  line-height: 1.5;
-  margin: 100px;
-  font-size: 30px;
-  font-family: Arial;
-  color: red;
-  text-align: center;
-}
-
-ul, ol {
-	padding-left: 15px;
-}
-
-
-
-/* Footer styles */
-
 
 footer {
-  color: #c7c7c7;
-  Background-color: #1a1a1a;
-  padding: 20px;
-  text-align: center;
-  padding: 100px;
-  margin-top: auto;
+  grid-area: footer;
+}header {
+  grid-area: header;
 }
 
-
-
-footer a {
-  font-family: Arial;
-  color: #c7c7c7;
-  text-decoration: none;
-  transition: all 0.2s ease;
-  padding: 10px;
+nav {
+  grid-area: nav;
+  margin-left: 0.5rem;
 }
 
-
-/*media queuries */
-
-
-@media (max-width: 768px) {
-
-
+main {
+  grid-area: content;
 }
 
-@media (max-width: 1024) {
-  nav {
-      position: absolute;
-      background-color: blue;
+aside {
+  grid-area: side;
+  margin-right: 0.5rem;
+}
+
+footer {
+  grid-area: footer;
+}@media (max-width: 768px) {
+  .container {
+    grid-template-areas:
+      "header"
+      "nav"
+      "content"
+      "side"
+      "footer";
+
+    grid-template-columns: 1fr;
+    grid-template-rows:
+      auto /* Header */
+      minmax(75px, auto) /* Nav */
+      1fr /* Content */
+      minmax(75px, auto) /* Sidebar */
+      auto; /* Footer */
   }
-}
+
+  nav, aside {
+    margin: 0;
+  }
+}       /* Basic reset for margins and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Set the background color and font */
+        body {
+            font-family: Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+
+        /* Centering the portfolio container */
+        .portfolio-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+           	gap: 20px 0px; /* Gap between the items */
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Portfolio item style */
+        .portfolio-item {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .portfolio-item h3 {
+            font-size: 1.5em;
+            margin: 15px 0;
+        }
+
+        .portfolio-item p {
+            font-size: 1em;
+            color: #666;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsiveness for smaller screens */
+        @media (max-width: 768px) {
+            .portfolio-container {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .portfolio-container {
+                grid-template-columns: 1fr; /* 1 column on mobile */
+            }
+        }
