@@ -1,3 +1,4 @@
+
 .container {
   display: grid;
 
@@ -8,15 +9,16 @@
 	
   
 	
-  grid-gap: 10px;
+    grid-gap: 10px;
 
-  height: 100vh;
-  font-family: "Helvetica", "Arial";
+    height: 100vh;
+    font-family: "Helvetica", "Arial";
+    color: ;
 	
 	grid-template-columns: 200px 1fr 200px;
     grid-template-rows: auto 1fr auto;
 }
-
+}
 header {
   grid-area: header;
 	border: 2px solid red;
@@ -26,17 +28,44 @@ nav {
   grid-area: nav;
   margin-right: 0.5rem;
   border: 2px solid red;
+
+}
+nav ul {
+	list-style-type: none;
+	text-align: right;
+	
 }
 nav p {
-	text-align: right;
 	font-size: 29.124px;
 	line-height: 47.122632px;
+	
+
 }
 
 main {
   grid-area: content;
-  border: 2px solid red;d
+  border: 2px solid red;
+	
   
+}
+
+main .portfolio-grid-area {
+	width: 100%; 
+	height: auto;
+	display: grid; 
+	grid-gap: 14px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	
+	
+}
+
+main .portfolio-item {
+
+	border: 2px solid red;
+	width: 100px;
+	
+	
 }
 
 main p {
@@ -54,4 +83,7 @@ footer {
   grid-area: footer;
   border: 2px solid red;
   margin-right: 0.5rem;
+  
 }
+
+
