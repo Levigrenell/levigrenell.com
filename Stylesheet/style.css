@@ -43,8 +43,8 @@ nav p {
 
 main {
   grid-area: content;
-  border: 2px solid red;
-	
+  border: 5px solid white;
+  background-color: black;
   
 }
 
@@ -61,7 +61,7 @@ main .portfolio-grid-area {
 
 main .portfolio-item {
 
-	border: 2px solid red;
+	border: 2px solid white;
 	width: 200px;
 	height: 200px;
 	margin-bottom: 5em;
