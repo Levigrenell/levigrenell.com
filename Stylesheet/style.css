@@ -113,12 +113,14 @@ main p {
 
 footer {
   grid-area: footer;
-  border: 2px solid red;
+
   margin-right: 0.5rem;
   
 }
-
-
+footer img {
+	width: 100px;
+	height: 100px;
+}
 
 @media (max-width: 768px){
 
