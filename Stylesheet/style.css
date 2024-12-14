@@ -22,18 +22,19 @@
 }
 header {
   grid-area: header;
-	border: 2px solid red;
+
 }
 
 nav {
   grid-area: nav;
-  border: 2px solid red;
+ 
   margin-right: 0.5em;
 
 }
 nav ul {
 	list-style-type: none;
 	text-align: right;
+	
 	
 }
 nav p {
