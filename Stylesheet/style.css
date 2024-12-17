@@ -196,8 +196,14 @@ main .portfolio-grid-area {
 
 	main .portfolio-grid-area {
 display: block;
+
 	
 }
+img:hover {
+	/* Start the shake animation and make the animation last for 0.5 seconds */
+	animation: shake 0;
+  
+  }
 
 	
 @media (max-width: 450px){
