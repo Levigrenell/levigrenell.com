@@ -258,11 +258,11 @@ class WP_Widget_Media_Video extends WP_Widget_Media {
 				);
 				?>
 			<# } else if ( data.is_oembed && data.model.poster ) { #>
-				<a href="{{ data.model.src }}" target="_blank" class="media-widget-video-link">
+				<a href="{{ data.model.src }}" target="_parent" class="media-widget-video-link">
 					<img src="{{ data.model.poster }}" />
 				</a>
 			<# } else if ( data.is_oembed ) { #>
-				<a href="{{ data.model.src }}" target="_blank" class="media-widget-video-link no-poster">
+				<a href="{{ data.model.src }}" target="_parent" class="media-widget-video-link no-poster">
 					<span class="dashicons dashicons-format-video"></span>
 				</a>
 			<# } else if ( data.model.src ) { #>

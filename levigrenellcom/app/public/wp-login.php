@@ -704,7 +704,7 @@ switch ( $action ) {
 				);
 
 				printf(
-					'<a href="%s" target="_blank">%s%s</a>',
+					'<a href="%s" target="_parent">%s%s</a>',
 					esc_url( $admin_email_help_url ),
 					__( 'Why is this important?' ),
 					$accessibility_text

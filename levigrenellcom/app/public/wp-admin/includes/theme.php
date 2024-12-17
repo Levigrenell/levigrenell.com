@@ -877,7 +877,7 @@ function customize_themes_print_templates() {
 					<# if ( data.stars && 0 != data.num_ratings ) { #>
 						<div class="theme-rating">
 							{{{ data.stars }}}
-							<a class="num-ratings" target="_blank" href="{{ data.reviews_url }}">
+							<a class="num-ratings" target="_parent" href="{{ data.reviews_url }}">
 								<?php
 								printf(
 									'%1$s <span class="screen-reader-text">%2$s</span>',

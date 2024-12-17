@@ -703,11 +703,11 @@ function install_plugin_information() {
 				?>
 				</li>
 			<?php } if ( ! empty( $api->slug ) && empty( $api->external ) ) { ?>
-				<li><a target="_blank" href="<?php echo esc_url( __( 'https://wordpress.org/plugins/' ) . $api->slug ); ?>/"><?php _e( 'WordPress.org Plugin Page &#187;' ); ?></a></li>
+				<li><a target="_parent" href="<?php echo esc_url( __( 'https://wordpress.org/plugins/' ) . $api->slug ); ?>/"><?php _e( 'WordPress.org Plugin Page &#187;' ); ?></a></li>
 			<?php } if ( ! empty( $api->homepage ) ) { ?>
-				<li><a target="_blank" href="<?php echo esc_url( $api->homepage ); ?>"><?php _e( 'Plugin Homepage &#187;' ); ?></a></li>
+				<li><a target="_parent" href="<?php echo esc_url( $api->homepage ); ?>"><?php _e( 'Plugin Homepage &#187;' ); ?></a></li>
 			<?php } if ( ! empty( $api->donate_link ) && empty( $api->contributors ) ) { ?>
-				<li><a target="_blank" href="<?php echo esc_url( $api->donate_link ); ?>"><?php _e( 'Donate to this plugin &#187;' ); ?></a></li>
+				<li><a target="_parent" href="<?php echo esc_url( $api->donate_link ); ?>"><?php _e( 'Donate to this plugin &#187;' ); ?></a></li>
 			<?php } ?>
 		</ul>
 		<?php if ( ! empty( $api->rating ) ) { ?>
@@ -758,7 +758,7 @@ function install_plugin_information() {
 						<span class="counter-label">
 							<?php
 							printf(
-								'<a href="%s" target="_blank" aria-label="%s">%s</a>',
+								'<a href="%s" target="_parent" aria-label="%s">%s</a>',
 								"https://wordpress.org/support/plugin/{$api->slug}/reviews/?filter={$key}",
 								$aria_label,
 								/* translators: %s: Number of stars. */
@@ -794,7 +794,7 @@ function install_plugin_information() {
 				?>
 			</ul>
 					<?php if ( ! empty( $api->donate_link ) ) { ?>
-				<a target="_blank" href="<?php echo esc_url( $api->donate_link ); ?>"><?php _e( 'Donate to this plugin &#187;' ); ?></a>
+				<a target="_parent" href="<?php echo esc_url( $api->donate_link ); ?>"><?php _e( 'Donate to this plugin &#187;' ); ?></a>
 			<?php } ?>
 				<?php } ?>
 	</div>
@@ -814,7 +814,7 @@ function install_plugin_information() {
 		if ( current_user_can( 'update_php' ) ) {
 			$compatible_php_notice_message .= sprintf(
 				/* translators: %s: URL to Update PHP page. */
-				' ' . __( '<a href="%s" target="_blank">Click here to learn more about updating PHP</a>.' ),
+				' ' . __( '<a href="%s" target="_parent">Click here to learn more about updating PHP</a>.' ),
 				esc_url( wp_get_update_php_url() )
 			) . wp_update_php_annotation( '</p><p><em>', '</em>', false );
 		} else {

@@ -143,7 +143,7 @@ function render_block_core_navigation_submenu( $attributes, $content, $block ) {
 		}
 
 		if ( isset( $attributes['opensInNewTab'] ) && true === $attributes['opensInNewTab'] ) {
-			$html .= ' target="_blank"  ';
+			$html .= ' target="_parent"  ';
 		}
 
 		if ( isset( $attributes['rel'] ) ) {

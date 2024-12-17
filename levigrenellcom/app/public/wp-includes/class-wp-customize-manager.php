@@ -5707,7 +5707,7 @@ final class WP_Customize_Manager {
 		$section_description  = '<p>';
 		$section_description .= __( 'Add your own CSS code here to customize the appearance and layout of your site.' );
 		$section_description .= sprintf(
-			' <a href="%1$s" class="external-link" target="_blank">%2$s<span class="screen-reader-text"> %3$s</span></a>',
+			' <a href="%1$s" class="external-link" target="_parent">%2$s<span class="screen-reader-text"> %3$s</span></a>',
 			esc_url( __( 'https://developer.wordpress.org/advanced-administration/wordpress/css/' ) ),
 			__( 'Learn more about CSS' ),
 			/* translators: Hidden accessibility text. */
@@ -5728,7 +5728,7 @@ final class WP_Customize_Manager {
 				/* translators: 1: Link to user profile, 2: Additional link attributes, 3: Accessibility text. */
 				__( 'The edit field automatically highlights code syntax. You can disable this in your <a href="%1$s" %2$s>user profile%3$s</a> to work in plain text mode.' ),
 				esc_url( get_edit_profile_url() ),
-				'class="external-link" target="_blank"',
+				'class="external-link" target="_parent"',
 				sprintf(
 					'<span class="screen-reader-text"> %s</span>',
 					/* translators: Hidden accessibility text. */

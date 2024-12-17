@@ -126,14 +126,14 @@ if ( $viewable ) {
 
 	// Preview post link.
 	$preview_post_link_html = sprintf(
-		' <a target="_blank" href="%1$s">%2$s</a>',
+		' <a target="_parent" href="%1$s">%2$s</a>',
 		esc_url( $preview_url ),
 		__( 'Preview post' )
 	);
 
 	// Scheduled post preview link.
 	$scheduled_post_link_html = sprintf(
-		' <a target="_blank" href="%1$s">%2$s</a>',
+		' <a target="_parent" href="%1$s">%2$s</a>',
 		esc_url( $permalink ),
 		__( 'Preview post' )
 	);
@@ -147,14 +147,14 @@ if ( $viewable ) {
 
 	// Preview page link.
 	$preview_page_link_html = sprintf(
-		' <a target="_blank" href="%1$s">%2$s</a>',
+		' <a target="_parent" href="%1$s">%2$s</a>',
 		esc_url( $preview_url ),
 		__( 'Preview page' )
 	);
 
 	// Scheduled page preview link.
 	$scheduled_page_link_html = sprintf(
-		' <a target="_blank" href="%1$s">%2$s</a>',
+		' <a target="_parent" href="%1$s">%2$s</a>',
 		esc_url( $permalink ),
 		__( 'Preview page' )
 	);

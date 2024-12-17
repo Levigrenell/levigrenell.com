@@ -161,7 +161,7 @@ function wp_print_media_templates() {
 		__( '<a href="%1$s" %2$s>Learn how to describe the purpose of the image%3$s</a>. Leave empty if the image is purely decorative.' ),
 		/* translators: Localized tutorial, if one exists. W3C Web Accessibility Initiative link has list of existing translations. */
 		esc_url( __( 'https://www.w3.org/WAI/tutorials/images/decision-tree/' ) ),
-		'target="_blank"',
+		'target="_parent"',
 		sprintf(
 			'<span class="screen-reader-text"> %s</span>',
 			/* translators: Hidden accessibility text. */
@@ -728,7 +728,7 @@ function wp_print_media_templates() {
 					<# } #>
 
 					<# if ( data.can.save && data.sizes ) { #>
-						<a class="edit-attachment" href="{{ data.editLink }}&amp;image-editor" target="_blank"><?php _e( 'Edit Image' ); ?></a>
+						<a class="edit-attachment" href="{{ data.editLink }}&amp;image-editor" target="_parent"><?php _e( 'Edit Image' ); ?></a>
 					<# } #>
 				<# } #>
 

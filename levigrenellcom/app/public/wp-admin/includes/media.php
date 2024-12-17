@@ -3044,7 +3044,7 @@ function media_upload_flash_bypass() {
 			/* translators: 1: URL to browser uploader, 2: Additional link attributes. */
 			__( 'You are using the multi-file uploader. Problems? Try the <a href="%1$s" %2$s>browser uploader</a> instead.' ),
 			$browser_uploader,
-			'target="_blank"'
+			'target="_parent"'
 		);
 	?>
 	</p>
@@ -3082,7 +3082,7 @@ function media_upload_max_image_resize() {
 	$end     = '';
 
 	if ( current_user_can( 'manage_options' ) ) {
-		$a   = '<a href="' . esc_url( admin_url( 'options-media.php' ) ) . '" target="_blank">';
+		$a   = '<a href="' . esc_url( admin_url( 'options-media.php' ) ) . '" target="_parent">';
 		$end = '</a>';
 	}
 
@@ -3243,7 +3243,7 @@ function edit_form_image_editor( $post ) {
 			__( '<a href="%1$s" %2$s>Learn how to describe the purpose of the image%3$s</a>. Leave empty if the image is purely decorative.' ),
 			/* translators: Localized tutorial, if one exists. W3C Web Accessibility Initiative link has list of existing translations. */
 			esc_url( __( 'https://www.w3.org/WAI/tutorials/images/decision-tree/' ) ),
-			'target="_blank"',
+			'target="_parent"',
 			sprintf(
 				'<span class="screen-reader-text"> %s</span>',
 				/* translators: Hidden accessibility text. */

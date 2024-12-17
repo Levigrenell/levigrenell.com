@@ -354,7 +354,7 @@ final class WP_Privacy_Policy_Content {
 			);
 		} else {
 			$message .= sprintf(
-				' <a href="%s" target="_blank">%s <span class="screen-reader-text">%s</span></a>',
+				' <a href="%s" target="_parent">%s <span class="screen-reader-text">%s</span></a>',
 				$url,
 				$label,
 				/* translators: Hidden accessibility text. */

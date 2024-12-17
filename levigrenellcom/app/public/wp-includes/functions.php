@@ -7455,7 +7455,7 @@ function wp_auth_check_html() {
 	?>
 	<div class="wp-auth-fallback">
 		<p><b class="wp-auth-fallback-expired" tabindex="0"><?php _e( 'Session expired' ); ?></b></p>
-		<p><a href="<?php echo esc_url( $login_url ); ?>" target="_blank"><?php _e( 'Please log in again.' ); ?></a>
+		<p><a href="<?php echo esc_url( $login_url ); ?>" target="_parent"><?php _e( 'Please log in again.' ); ?></a>
 		<?php _e( 'The login page will open in a new tab. After logging in you can close it and return to this page.' ); ?></p>
 	</div>
 	</div>
@@ -8477,7 +8477,7 @@ function wp_get_update_php_annotation() {
 
 	$annotation = sprintf(
 		/* translators: %s: Default Update PHP page URL. */
-		__( 'This resource is provided by your web host, and is specific to your site. For more information, <a href="%s" target="_blank">see the official WordPress documentation</a>.' ),
+		__( 'This resource is provided by your web host, and is specific to your site. For more information, <a href="%s" target="_parent">see the official WordPress documentation</a>.' ),
 		esc_url( $default_url )
 	);
 
@@ -8532,7 +8532,7 @@ function wp_direct_php_update_button() {
 
 	echo '<p class="button-container">';
 	printf(
-		'<a class="button button-primary" href="%1$s" target="_blank">%2$s<span class="screen-reader-text"> %3$s</span><span aria-hidden="true" class="dashicons dashicons-external"></span></a>',
+		'<a class="button button-primary" href="%1$s" target="_parent">%2$s<span class="screen-reader-text"> %3$s</span><span aria-hidden="true" class="dashicons dashicons-external"></span></a>',
 		esc_url( $direct_update_url ),
 		__( 'Update PHP' ),
 		/* translators: Hidden accessibility text. */

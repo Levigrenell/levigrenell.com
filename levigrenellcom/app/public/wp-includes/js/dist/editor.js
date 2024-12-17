@@ -22019,7 +22019,7 @@ const withRegistryProvider = (0,external_wp_compose_namespaceObject.createHigher
 /** @typedef {import('@wordpress/block-editor').InserterMediaCategory} InserterMediaCategory */
 
 const getExternalLink = (url, text) => `<a ${getExternalLinkAttributes(url)}>${text}</a>`;
-const getExternalLinkAttributes = url => `href="${url}" target="_blank" rel="noreferrer noopener"`;
+const getExternalLinkAttributes = url => `href="${url}" target="_parent" rel="noreferrer noopener"`;
 const getOpenverseLicense = (license, licenseVersion) => {
   let licenseName = license.trim();
   // PDM has no abbreviation
