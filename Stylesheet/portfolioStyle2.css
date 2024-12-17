@@ -112,7 +112,6 @@ width: 100%;
   
   footer {
     grid-area: footer;
-    border: 2px solid red;
     margin-right: 0.5rem;
     
   }
