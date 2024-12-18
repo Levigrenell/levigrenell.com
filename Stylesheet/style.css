@@ -73,6 +73,9 @@ main {
 
 
 
+
+
+
 main .portfolio-grid-area {
 	display: grid; 
 	grid-gap: 14px;
@@ -92,13 +95,16 @@ main .portfolio-item {
 	height: 50vh;
 	margin-bottom: 5em;
 	margin-top: 2em;
+	object-fit: cover;
+	overflow: hidden;
+
 }
 
-.portfolio-item.item5 a {
+.portfolio-item.item6 a {
 	text-decoration: none;
 
 }
-.portfolio-item.item5 h3 {
+.portfolio-item.item6 h3 {
 	text-decoration: none;
 	font-size: 47.122632px;
 	text-align: center;
@@ -106,25 +112,16 @@ main .portfolio-item {
 
 }
 .portfolio-item img {
-    width: 100%;
-	height: 100%;
-	object-fit: cover;
-    overflow: hidden;
+    width: 200%;
+	height: auto;
+	margin-left: auto;
+	display: inline-block;
+	margin: -75px 0 0 -100px;
 
-}
-.box {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-    overflow: hidden;
-	position: relative;
-
-}
-
-.box img {
 	
-	position: absolute;
+
 }
+
 
 shadow {
 
@@ -132,7 +129,7 @@ shadow {
 	width: 100%;
 	height: 100%;
 	z-index: 10;
-	box-shadow: inset 0 0 10px #555555;
+	
 	border: 2px solid red;
 
 }
@@ -175,54 +172,4 @@ footer img {
 }
 
 
-@media (max-width: 994px){
 
-
-main .portfolio-grid-area {
-	display: grid; 
-	grid-gap: 14px;
-	grid-template-columns: 1fr 1fr;
-	justify-content: space-evenly;
-    justify-items: center;
-    align-content: space-evenly;
-    align-items: center;
-	}
-	
-}
-
-	
-
-@media (max-width: 768px){
-
-	main .portfolio-grid-area {
-display: block;
-
-	
-}
-img:hover {
-	/* Start the shake animation and make the animation last for 0.5 seconds */
-	animation: shake 0;
-  
-  }
-
-	
-@media (max-width: 450px){
-	
-main .portfolio-grid-area {
-	display: grid; 
-	grid-gap: 14px;
-	grid-template-columns: 1fr;
-	justify-content: space-evenly;
-    justify-items: center;
-    align-content: space-evenly;
-    align-items: center;
-	}
-	
-main .portfolio-item {
-
-	width: 300px;
-	height: 300px;
-	margin-bottom: 5em;
-	
-}
-}
