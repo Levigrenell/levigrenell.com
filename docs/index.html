@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>levigrenell.com</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
   <body>
     <main>
-        
+        <div class="navContainer">
         <div class="nav">
             <div class="navLogo">
                 <h1>Levi Grenell</h1>
@@ -20,22 +20,54 @@
                 <p><a href="">+</a></p>
 
             </div>
-
-
         </div>  
+        </div>
+   <div class="videoContainer">
+<!-- This is video html-->    
+   <video autoplay muted loop id="myVideo">
+     <source src="Video\drop2.mp4" type="video/mp4">
+   </video>
+   </div>
+<!-- Optional: some overlay text to describe the video -->
+<div class="content">
+  <!-- Use a button to pause/play the video with JavaScript -->
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
 
         <div class="showcase">
             <div class="griditem">
-                <img src="images\puppy.png" alt="cute">
+                <a href=""> <img src="images\puppy.png" alt="cute">
+                 <p>brand identity system</p> </a>
             </div>
-            <div class="griditem">  <img src="images\puppy.png" alt="cute"></div>
-            <div class="griditem">  <img src="images\puppy.png" alt="cute"></div>
-            <div class="griditem">  <img src="images\puppy.png" alt="cute"></div>
-            <div class="griditem">  <img src="images\puppy.png" alt="cute"></div>
-            <div class="griditem">  <img src="images\puppy.png" alt="cute"></div>
+
+            <div class="griditem"> <a href=""> <img src="images\puppy.png" alt="cute">
+            <p>marketing campaign print and digital</p> </a>
+          </div>
+            <div class="griditem"> <a href=""> <img src="images\puppy.png" alt="cute">
+            <p>website redesign</p> </a>
+          </div>
+            <div class="griditem">  <a href=""><img src="images\puppy.png" alt="cute">
+              <p>packaging design</p> </a>
+            </div> 
+            <div class="griditem"> <a href=""> <img src="images\puppy.png" alt="cute">
+            <p>social media content pack</p> </a>
+            </div>
+            <div class="griditem"> <a href=""> <img src="images\puppy.png" alt="cute">
+            <p>event branding</p> </a>
+            </div>
+            <div class="griditem"> <a href=""> <img src="images\puppy.png" alt="cute">
+            <p>editorial layout</p> </a>
+            </div>
+            <div class="griditem"> <a href=""> <img src="images\puppy.png" alt="cute">
+            <p>nonprofit rebrand or awareness campaign</p> </a>
+            </div>
 
         </div>
+         
+      <div class="footer"></div>
+  
     </main>
+   
     <script src="index.js"></script>
   </body>
 </html>
