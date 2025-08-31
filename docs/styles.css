@@ -5,8 +5,17 @@
     list-style-type: none;
     font-family: Helvetica, sans-serif;
     text-decoration: none;
+
     
 }
+
+.UnderConstruction {
+    position: absolute;
+    background-color: white;
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
 
 html, body {
     width: 100%;
